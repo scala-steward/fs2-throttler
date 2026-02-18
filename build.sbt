@@ -6,7 +6,7 @@ ThisBuild / scalacOptions ++= scalaOptions(scalaVersion.value)
 
 ThisBuild / libraryDependencies ++= Seq(
   "co.fs2" %% "fs2-core" % "3.12.2",
-  "org.scalameta" %% "munit" % "1.2.1" % Test,
+  "org.scalameta" %% "munit" % "1.2.2" % Test,
   "org.typelevel" %% "cats-effect-testkit" % "3.6.3" % Test
 )
 
@@ -55,6 +55,5 @@ ThisBuild / developers := List(
   )
 )
 ThisBuild / description := "Throttling for FS2 based on the Token bucket algorithm"
-ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / scalafmtOnCompile := true
